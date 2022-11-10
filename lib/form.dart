@@ -260,12 +260,13 @@ class _MyFormPageState extends State<MyFormPage> {
                                       Padding(
                                           padding: const EdgeInsets.symmetric(
                                               vertical: 8.0),
-                                          child: Text("Umur : $umur")),
+                                          child:
+                                              Text("Umur : ${umur.floor()}")),
                                       Padding(
                                           padding: const EdgeInsets.symmetric(
                                               vertical: 8.0),
                                           child: Text(
-                                              "Program : ${program[indexProgram]}")),
+                                              "Program : ${indexProgram == -1 ? "Null" : program[indexProgram]}")),
                                       Padding(
                                           padding: const EdgeInsets.symmetric(
                                               vertical: 8.0),
